@@ -4,7 +4,7 @@ Upload the file
 
 $settings['file_contents'] ="@/home/Downloads/emails.txt"; //path to your file
 
-$url = 'https://app.mailtester.com/api/verifApiFile?secret='.$key.'&filename=my_emails.txt';
+$url = 'https://api.mailtester.com/api/bulk?secret='.$key.'&filename=my_emails.txt';
 
 $ch = curl_init($url);
 
@@ -22,7 +22,7 @@ download ready file
 
 $key = "PUT YOUR API KEY HERE";
 
-$url = 'https://app.mailtester.com/api/getApiFileInfo?secret='.$key.'&id=10700';
+$url = 'https://api.mailtester.com/api/details?secret='.$key.'&id=10700';
 
 $string = file_get_contents($url);
 
