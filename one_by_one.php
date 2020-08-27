@@ -2,7 +2,7 @@ $email = "test@example.com";
 
 $key = "PUT YOUR API KEY HERE";
 
-$url = "https://app.mailtester.com/api/verifEmail?secret=".$key."&email=".$email;
+$url = "https://api.mailtester.com/api/singlemail?secret=".$key."&email=".$email;
 
 $ch = curl_init();
 
